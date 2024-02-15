@@ -74,7 +74,7 @@ function getTotal(cart) {
   const totalItemsHTML = document.querySelector(".noOfItems");
   totalItemsHTML.innerHTML = `${totalItem} items`;
   const totalAmountHTML = document.querySelector(".total");
-  totalAmountHTML.innerHTML = `$${cartTotal}`;
+  totalAmountHTML.innerHTML = `${cartTotal} kr`;
 }
 
 getTotal(cart);
