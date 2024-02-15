@@ -41,7 +41,7 @@ const productsHTML = products.map(
         <img src="${product.image}" alt="${product.name}" class="img-fluid">
         <h2 class="product-name">${product.name}</h2>
         <strong>${product.price} kr</strong>
-        <button class="product-btn" id=${product.id}>Add to Cart</button>
+        <button class="product-btn" id=${product.id}>Lägg i kundvagn</button>
     </div>`
 );
 const result = document.querySelector(".result");
@@ -72,7 +72,7 @@ function getTotal(cart) {
     { totalItem: 0, cartTotal: 0 }
   );
   const totalItemsHTML = document.querySelector(".noOfItems");
-  totalItemsHTML.innerHTML = `${totalItem} items`;
+  totalItemsHTML.innerHTML = `${totalItem} varor`;
   const totalAmountHTML = document.querySelector(".total");
   totalAmountHTML.innerHTML = `${cartTotal} kr`;
 }
