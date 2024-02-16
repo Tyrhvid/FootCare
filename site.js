@@ -7,7 +7,7 @@ class Product {
 }
 
 const products = [
-  new Product("Product 1", 2500, "https://example.com/path/to/image1.jpg"),
+  new Product("Product 1", 2500, "images/tretanter.JPG"),
   new Product("Product 2", 1500, "https://example.com/path/to/image2.jpg"),
   new Product("Product 3", 1000, "https://example.com/path/to/image3.jpg"),
 ];
