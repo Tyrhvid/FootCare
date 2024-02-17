@@ -16,6 +16,7 @@ img {
 }
 
 #välkommen{
+    font-size: larger;
  font-family: monospace;
  font-weight: bold;
  color: chartreuse;
