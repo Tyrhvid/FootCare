@@ -7,9 +7,19 @@ class Product {
 }
 
 const products = [
-  new Product("Product 1", 2500, "images/tretanter.JPG"),
-  new Product("Product 2", 1500, "https://example.com/path/to/image2.jpg"),
-  new Product("Product 3", 1000, "https://example.com/path/to/image3.jpg"),
+  new Product(
+    "Product 1",
+    2500,
+    "images/Fettant.JPG",
+    "En tant med kraftig benstomme"
+  ),
+  new Product("Product 2", 1500, "images/tantsax.JPG", "En ung dam med sax"),
+  new Product(
+    "Product 3",
+    1000,
+    "images/tant biting nails.JPG",
+    "En yngre dam som biter på naglarna"
+  ),
 ];
 
 let cart = [];
