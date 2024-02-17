@@ -1,6 +1,36 @@
 
 
+.navbar {
+    background-color:azure;
+}
+
+.logga-topp {
+    color: darkorange;
+    font-family: fantasy;
+    font-style: inherit;
+    font-size: x-large;
+
+}
+
+
+
 #totalPris {
     font-weight: bold;
-};
-    
+}
+
+.btn-success{
+    background-color: darkmagenta
+}
+
+.btn{
+    font-family: cursive;
+    color: gold;
+}
+
+ body {
+
+     font-size: 1em;
+     background-color:forestgreen
+ }
+
+

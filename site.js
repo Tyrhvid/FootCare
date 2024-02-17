@@ -8,14 +8,19 @@ class Product {
 
 const products = [
   new Product(
-    "Product 1",
+    "Häl-Helmi ger en mysig fotmassage",
     2500,
     "images/Fettant.JPG",
     "En tant med kraftig benstomme"
   ),
-  new Product("Product 2", 1500, "images/tantsax.JPG", "En ung dam med sax"),
   new Product(
-    "Product 3",
+    "Fotsvett-Siv utför grundlig pedikyr och manikyr",
+    1500,
+    "images/tantsax.JPG",
+    "En ung dam med sax"
+  ),
+  new Product(
+    "Tå-Tove trimmar naglarna till perfektion med sina tänder",
     1000,
     "images/tant biting nails.JPG",
     "En yngre dam som biter på naglarna"
@@ -37,7 +42,7 @@ function updateCart() {
   for (const item of cart) {
     const removeBtn = document.createElement("button");
     removeBtn.classList.add("btn", "btn-danger");
-    removeBtn.textContent = "Remove";
+    removeBtn.textContent = "Avlägsna";
     removeBtn.onclick = () => {
       cart.splice(cart.indexOf(item), 1);
       updateCart();
@@ -75,10 +80,10 @@ for (const product of products) {
   card.classList.add("card", "bg-dark", "container");
   cardBody.classList.add("card-body", "row");
   cardFooter.classList.add("card-footer", "row", "container");
-  cardTitle.classList.add("card-title", "text-info", "text-center");
+  cardTitle.classList.add("card-title", "text-light", "text-center");
   addToCartBtn.classList.add("btn", "btn-success", "mx-1", "col");
 
-  addToCartBtn.innerText = "Add to Cart";
+  addToCartBtn.innerText = "Köp Tjänsten";
   addToCartBtn.onclick = () => {
     cart.push(product);
     updateCart();
